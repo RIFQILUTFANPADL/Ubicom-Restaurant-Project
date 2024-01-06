@@ -1,20 +1,20 @@
 // src/services/ApiService.js
 
+// Contoh implementasi service untuk berkomunikasi dengan API
 class ApiService {
-  // Contoh implementasi layanan API
-  static async fetchMenuItems() {
-    try {
-      // Implementasi pemanggilan API untuk mendapatkan daftar menu
-      const response = await fetch('https://api.example.com/menu');
-      const data = await response.json();
-      return data;
-    } catch (error) {
-      console.error('Error fetching menu items:', error);
-      throw error;
-    }
+  // Fungsi untuk mendapatkan data menu dari API
+  static getMenu() {
+    // Implementasi logika pengambilan data menu dari API
+    // (Bisa menggunakan fetch, axios, atau metode lainnya)
+    return fetch('https://api.example.com/menu')
+      .then(response => response.json())
+      .catch(error => {
+        console.error('Error fetching menu:', error);
+        throw error;
+      });
   }
 
-  // Add more API service methods as needed
+  // Add more API service functions as needed
 }
 
 export default ApiService;
