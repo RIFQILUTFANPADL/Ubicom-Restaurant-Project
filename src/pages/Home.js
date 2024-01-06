@@ -2,12 +2,13 @@
 
 import React from 'react';
 
+// Komponen untuk halaman utama
 const Home = () => {
   return (
     <div>
-      <h1>Welcome to Our Restaurant</h1>
-      <p>Discover the best dishes and enjoy a delightful dining experience with us.</p>
-      {/* Add more content as needed */}
+      <h2>Selamat datang di Restoran Ubicom!</h2>
+      <p>Temukan berbagai menu lezat kami dan nikmati pengalaman kuliner yang luar biasa.</p>
+      {/* Tambahkan lebih banyak komponen atau konten sesuai kebutuhan */}
     </div>
   );
 };
