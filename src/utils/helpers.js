@@ -1,13 +1,16 @@
 // src/utils/helpers.js
 
-// Fungsi untuk menghitung total harga dari keranjang belanja
-const calculateTotalPrice = (cartItems) => {
-  return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+// Fungsi untuk menghitung total harga pesanan
+const calculateTotalPrice = (items) => {
+  return items.reduce((total, item) => total + item.price * item.quantity, 0);
 };
 
-// Fungsi untuk memformat harga ke dalam format mata uang
-const formatCurrency = (value) => {
-  return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(value);
+// Fungsi untuk memformat harga menjadi format mata uang
+const formatCurrency = (amount) => {
+  return new Intl.NumberFormat('id-ID', {
+    style: 'currency',
+    currency: 'IDR',
+  }).format(amount);
 };
 
 export { calculateTotalPrice, formatCurrency };
