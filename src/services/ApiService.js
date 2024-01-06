@@ -1,15 +1,37 @@
-// src/services/ApiService.js
+/* src/services/ApiService.js */
 
-// Fungsi untuk melakukan request ke API dan mendapatkan data menu
-const getMenuData = async () => {
-  try {
-    const response = await fetch('https://example.com/api/menu');
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Error fetching menu data:', error);
-    throw new Error('Failed to fetch menu data');
+class ApiService {
+  // Method to fetch menu items from the backend
+  async getMenuItems() {
+    try {
+      // Implement the logic to fetch menu items from the API
+      const response = await fetch('https://api.example.com/menu');
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Error fetching menu items:', error);
+      throw error;
+    }
   }
-};
 
-export { getMenuData };
+  // Method to place an order
+  async placeOrder(orderDetails) {
+    try {
+      // Implement the logic to place an order through the API
+      const response = await fetch('https://api.example.com/orders', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(orderDetails),
+      });
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Error placing order:', error);
+      throw error;
+    }
+  }
+}
+
+export default new ApiService();
