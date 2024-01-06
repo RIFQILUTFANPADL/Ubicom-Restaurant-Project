@@ -2,16 +2,17 @@
 
 import React from 'react';
 
+// Komponen untuk halaman menu
 const Menu = () => {
   return (
     <div>
-      <h1>Our Menu</h1>
+      <h2>Menu Restoran Ubicom</h2>
       <ul>
-        <li>Appetizers</li>
-        <li>Main Courses</li>
-        <li>Desserts</li>
+        <li>Nasi Goreng Spesial</li>
+        <li>Mie Goreng Seafood</li>
+        <li>Ayam Bakar Madu</li>
+        {/* Tambahkan lebih banyak menu sesuai kebutuhan */}
       </ul>
-      {/* Add more content as needed */}
     </div>
   );
 };
