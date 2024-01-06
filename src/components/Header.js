@@ -1,4 +1,4 @@
-// src/components/Header.js
+/* src/components/Header.js */
 
 import React from 'react';
 
@@ -10,7 +10,7 @@ const Header = () => {
         <ul>
           <li>Home</li>
           <li>Menu</li>
-          {/* Tambahkan item menu lainnya sesuai kebutuhan */}
+          {/* Add more navigation items as needed */}
         </ul>
       </nav>
     </header>
