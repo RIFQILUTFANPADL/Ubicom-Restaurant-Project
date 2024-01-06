@@ -1,9 +1,9 @@
 // src/services/ApiService.js
 
 // Fungsi untuk melakukan request ke API dan mendapatkan data menu
-const fetchMenuData = async () => {
+const getMenuData = async () => {
   try {
-    const response = await fetch('https://api.example.com/menu');
+    const response = await fetch('https://example.com/api/menu');
     const data = await response.json();
     return data;
   } catch (error) {
@@ -12,4 +12,4 @@ const fetchMenuData = async () => {
   }
 };
 
-export { fetchMenuData };
+export { getMenuData };
