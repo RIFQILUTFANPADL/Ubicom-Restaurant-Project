@@ -1,14 +1,18 @@
 // src/pages/Home.js
 
 import React from 'react';
+import Header from '../components/Header';
 
-// Komponen untuk halaman utama
 const Home = () => {
   return (
     <div>
-      <h2>Selamat datang di Restoran Ubicom!</h2>
-      <p>Temukan berbagai menu lezat kami dan nikmati pengalaman kuliner yang luar biasa.</p>
-      {/* Tambahkan lebih banyak komponen atau konten sesuai kebutuhan */}
+      <Header />
+      <h2>Selamat datang di Ubicom Restaurant!</h2>
+      <p>
+        Selamat datang di situs resmi Ubicom Restaurant. Nikmati berbagai
+        hidangan lezat dan suasana yang nyaman.
+      </p>
+      {/* Tambahkan lebih banyak konten atau komponen yang diperlukan */}
     </div>
   );
 };
